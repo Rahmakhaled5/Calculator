@@ -1,0 +1,78 @@
+button, #Zero {
+    width: 100%;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#Zero {
+    width: calc(200% + 10px); 
+    z-index: 2;
+}
+
+#Zero2 {
+    z-index: 1;
+}
+
+.light{
+    background-color: hsl(0, 9%, 69%);
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+#calc {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    max-width: 500px;
+    overflow: hidden;
+    border: 5px solid hsl(0, 34%, 51%);
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 34%, 51%);
+    grid-column: 2; /* Spanning the second column for the display */
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: hsl(0, 0%, 15%);
+}
+
+button:hover, #Zero:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active, #Zero:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+    background-color: hsl(0, 34%, 51%);
+}
+
+.operator-btn:hover {
+    background-color: hsl(0, 58%, 14%);
+}
+
+.operator-btn:active {
+    background-color: hsl(35, 100%, 75%);
+}
