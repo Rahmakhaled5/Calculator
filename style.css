@@ -56,12 +56,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120vh;
+    min-height: 100vh;
     box-sizing: border-box;
-    background: linear-gradient(to right, #7ee29c, #5bab77, #24533c);
-    animation: gradientAnimation 3s ease infinite;
+    background: linear-gradient(55deg, #541f1f, #1f0101, #420000);
+    background-size: 200% 200%;
+    animation: gradient 7s ease-in-out infinite;
 }
-
 
 
 button:hover, #Zero:hover {
@@ -73,25 +73,25 @@ button:active, #Zero:active {
 }
 
 .operator-btn {
-    background-color: hsl(154, 71%, 33%);
+    background-color: hsl(0, 71%, 33%);
 }
 
 .operator-btn:hover {
-    background-color: hsl(141, 31%, 50%);
+    background-color: #541f1f;
 }
 
 .operator-btn:active {
     background-color: hsl(35, 100%, 75%);
 }
 
-@keyframes gradientAnimation {
+@keyframes gradient {
     0% {
-      background-position: 0% 50%; /* Start position of the gradient */
+      background-position: 0% 50%;
     }
     50% {
-      background-position: 100% 50%; /* Mid position of the gradient */
+      background-position: 100% 50%;
     }
     100% {
-      background-position: 0% 50%; /* End position of the gradient */
+      background-position: 0% 50%;
     }
-}
+  }
