@@ -32,30 +32,37 @@ button, #Zero {
 
 #calc {
     font-family: Arial, sans-serif;
-    background-color: hsl(0, 0%, 15%);
+    background-color: black;
     max-width: 500px;
     overflow: hidden;
-    border: 5px solid hsl(0, 34%, 51%);
+    border: 5px solid black;
+    border-radius: 20px;
 }
 
 #display {
     width: 100%;
     padding: 20px;
+    box-sizing: border-box;
     font-size: 5rem;
     text-align: left;
-    border: none;
-    background-color: hsl(0, 34%, 51%);
-    grid-column: 2; /* Spanning the second column for the display */
+    border: 45px solid black;
+    background-color: rgb(137, 128, 128);
+    grid-column: 2;
 }
+
 
 body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    background-color: hsl(0, 0%, 15%);
+    height: 120vh;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #7ee29c, #5bab77, #24533c);
+    animation: gradientAnimation 3s ease infinite;
 }
+
+
 
 button:hover, #Zero:hover {
     background-color: hsl(0, 0%, 40%);
@@ -66,13 +73,25 @@ button:active, #Zero:active {
 }
 
 .operator-btn {
-    background-color: hsl(0, 34%, 51%);
+    background-color: hsl(154, 71%, 33%);
 }
 
 .operator-btn:hover {
-    background-color: hsl(0, 58%, 14%);
+    background-color: hsl(141, 31%, 50%);
 }
 
 .operator-btn:active {
     background-color: hsl(35, 100%, 75%);
+}
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%; /* Start position of the gradient */
+    }
+    50% {
+      background-position: 100% 50%; /* Mid position of the gradient */
+    }
+    100% {
+      background-position: 0% 50%; /* End position of the gradient */
+    }
 }
